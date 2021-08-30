@@ -1,0 +1,23 @@
+---
+title: "EDS 215 Day 1 Notes"
+author: "Scout Leonard"
+date: "8/30/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+###Introducting the Shell
+
+- Shell: a type of commend interpreter
+
+- Command Interpreter: runs lines using REPL patttern. command is listed in the first part of the line, than the data that command is using. 
+
+- REPL: read, evaluate, print, loop. computers store data and run commands using that data using this patter. 
+
+*the shell interprets any amount of white space as just a single space*
+
+###Navigating Files and Directions
+
