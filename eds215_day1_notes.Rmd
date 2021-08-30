@@ -49,7 +49,20 @@ Escape character: `\`. Turns off the special meaning of the following character.
 - `..` means go up a folder
 - `open .` opens the working directory in finder
 - `cd-` goes back to the last folder you were in
+- `rm -r` recursive remove
 
 ### Working with Files and Directories 
 
+- Moving a file is just renaming it conceptually, becuase you are just changing the file path. 
 
+**Commands**
+
+- `ls s*`: list all the files that start with s
+- `ls *s`: list all the files that end with s
+- `echo *s`:
+- `echo s*`: 
+- `ls -d .?*`
+- `????-??-??`
+- `-d`: specifies that you don't want to dive into the files 
+- `ls -d [A-D]`: list files that start with a,b,c,d
+- `ls -d 20[0-2][0-9]`: list filed with any year from 2020-2029 in it

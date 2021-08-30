@@ -193,14 +193,34 @@ pre code {
 <li>some things fit more than 1 category</li>
 <li>they are fragile!</li>
 </ul>
-<p><strong>Command:</strong> <code>ls -F</code> prints a list with <code>/</code> in front of folders and <code>@</code> next to links.</p>
+<p><strong>Commands:</strong> <code>ls -F</code> prints a list with <code>/</code> in front of folders and <code>@</code> next to links.</p>
 <p>Escape character: <code>\</code>. Turns off the special meaning of the following character.</p>
-<p><strong>Command:</strong></p>
+<p><strong>Commands:</strong></p>
 <ul>
 <li><code>cd</code> changes directories.</li>
 <li><code>ls -a</code> shows .s for certain files (<strong>dot files:</strong> .pdfs, .txts, etc…). These are hidden from the ls command.</li>
 <li><code>..</code> means go up a folder</li>
 <li><code>open .</code> opens the working directory in finder</li>
+<li><code>cd-</code> goes back to the last folder you were in</li>
+<li><code>rm -r</code> recursive remove</li>
+</ul>
+</div>
+<div id="working-with-files-and-directories" class="section level3">
+<h3>Working with Files and Directories</h3>
+<ul>
+<li>Moving a file is just renaming it conceptually, becuase you are just changing the file path.</li>
+</ul>
+<p><strong>Commands</strong></p>
+<ul>
+<li><code>ls s*</code>: list all the files that start with s</li>
+<li><code>ls *s</code>: list all the files that end with s</li>
+<li><code>echo *s</code>:</li>
+<li><code>echo s*</code>:</li>
+<li><code>ls -d .?*</code></li>
+<li><code>????-??-??</code></li>
+<li><code>-d</code>: specifies that you don’t want to dive into the files</li>
+<li><code>ls -d [A-D]</code>: list files that start with a,b,c,d</li>
+<li><code>ls -d 20[0-2][0-9]</code>: list filed with any year from 2020-2029 in it</li>
 </ul>
 </div>
 
