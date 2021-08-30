@@ -193,7 +193,7 @@ pre code {
 <li>some things fit more than 1 category</li>
 <li>they are fragile!</li>
 </ul>
-<p><strong>Commands:</strong> <code>ls -F</code> prints a list with <code>/</code> in front of folders and <code>@</code> next to links.</p>
+<p><strong>Commands:</strong> - <code>ls -F</code> prints a list with <code>/</code> in front of folders and <code>@</code> next to links. - <code>.</code>: the current folder</p>
 <p>Escape character: <code>\</code>. Turns off the special meaning of the following character.</p>
 <p><strong>Commands:</strong></p>
 <ul>
@@ -216,12 +216,44 @@ pre code {
 <li><code>ls *s</code>: list all the files that end with s</li>
 <li><code>echo *s</code>:</li>
 <li><code>echo s*</code>:</li>
-<li><code>ls -d .?*</code></li>
+<li><code>ls -d .?*</code> -d sets the delimiter</li>
 <li><code>????-??-??</code></li>
 <li><code>-d</code>: specifies that you don’t want to dive into the files</li>
 <li><code>ls -d [A-D]</code>: list files that start with a,b,c,d</li>
 <li><code>ls -d 20[0-2][0-9]</code>: list filed with any year from 2020-2029 in it</li>
+<li><code>mkdir</code></li>
+<li><code>rmdir</code></li>
 </ul>
+</div>
+<div id="pipes-and-filters" class="section level3">
+<h3>Pipes and Filters</h3>
+<p><strong>Commands</strong></p>
+<ul>
+<li><p><code>wc</code> returns that number of lines of text, words(sequences of characters between white space), and characters</p></li>
+<li><p><code>wc &lt;</code> instead of reading from the file, read from the standard input. allows the shell to assume the burden of figuring out who talks to who.</p></li>
+<li><p><code>cmd1 | cmd2</code> <strong>pipe</strong> the standard output of <em>cmd1</em> to the standard input of <em>cmd2</em></p></li>
+<li><p><code>sort</code> says to arrange a list of files according to some specification</p>
+<ul>
+<li><code>sort -n</code> sort in ascending order</li>
+<li><code>sort -r -n</code> sort in descending order</li>
+</ul></li>
+<li><p><code>wc -l *pdb | sort -n | head -n 1</code> return the number of lines and list by length, sort them from largest to smallest, then show the first few lines (?)</p></li>
+</ul>
+<p><em>If you type a command without an argument, the terminal will wait for you to end the command. You can do this using</em> <code>ctrl + d</code>.</p>
+<p>Every process opens 3 files that it makes available to the program it’s running:</p>
+<ul>
+<li>standard input (default: your keyboard)</li>
+<li>standard output (default: your terminal window)</li>
+<li>standard error (default: alos your terminal window)</li>
+</ul>
+</div>
+<div id="loops-in-bash" class="section level3">
+<h3>Loops in Bash</h3>
+<p>Ina text editor:</p>
+<p>`for variable in items</p>
+<p>do</p>
+<p>stuff</p>
+<p>done`</p>
 </div>
 
 

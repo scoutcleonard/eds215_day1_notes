@@ -38,7 +38,9 @@ This is a form of indexing to speed up access to things.
  - some things fit more than 1 category
  - they are fragile! 
  
-**Commands:** `ls -F` prints a list with `/` in front of folders and `@` next to links. 
+**Commands:** 
+- `ls -F` prints a list with `/` in front of folders and `@` next to links. 
+- `.`: the current folder
 
 Escape character: `\`. Turns off the special meaning of the following character. 
 
@@ -61,8 +63,50 @@ Escape character: `\`. Turns off the special meaning of the following character.
 - `ls *s`: list all the files that end with s
 - `echo *s`:
 - `echo s*`: 
-- `ls -d .?*`
+- `ls -d .?*` -d sets the delimiter
 - `????-??-??`
 - `-d`: specifies that you don't want to dive into the files 
 - `ls -d [A-D]`: list files that start with a,b,c,d
 - `ls -d 20[0-2][0-9]`: list filed with any year from 2020-2029 in it
+- `mkdir`
+- `rmdir`
+
+### Pipes and Filters 
+
+**Commands**
+
+- `wc` returns that number of lines of text, words(sequences of characters between white space), and characters
+
+- `wc <` instead of reading from the file, read from the standard input. allows the shell to assume the burden of figuring out who talks to who. 
+
+- `cmd1 | cmd2` **pipe** the standard output of *cmd1* to the standard input of *cmd2*
+
+- `sort` says to arrange a list of files according to some specification 
+
+  - `sort -n` sort in ascending order
+  - `sort -r -n` sort in descending order 
+
+- `wc -l *pdb | sort -n | head -n 1` return the number of lines and list by length, sort them from largest to smallest, then show the first few lines (?)
+
+*If you type a command without an argument, the terminal will wait for you to end the command. You can do this using* `ctrl + d`.
+
+Every process opens 3 files that it makes available to the program it's running: 
+
+- standard input (default: your keyboard)
+- standard output (default: your terminal window)
+- standard error (default: alos your terminal window)
+
+### Loops in Bash
+
+Ina  text editor: 
+
+`for variable in items
+
+do
+
+  stuff
+  
+done`
+
+
+
