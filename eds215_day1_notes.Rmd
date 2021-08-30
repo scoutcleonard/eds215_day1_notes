@@ -9,15 +9,47 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-###Introducting the Shell
+### Introducting the Shell
 
-- Shell: a type of commend interpreter
+https://swcarpentry.github.io/shell-novice/01-intro/
 
-- Command Interpreter: runs lines using REPL patttern. command is listed in the first part of the line, than the data that command is using. 
+- Shell: a type of commend interpreter. Shell passes words to the command. 
+
+- Command Interpreter: runs lines using REPL pattern. command is listed in the first part of the line, than the data that command is using. 
 
 - REPL: read, evaluate, print, loop. computers store data and run commands using that data using this patter. 
 
 *the shell interprets any amount of white space as just a single space*
 
-###Navigating Files and Directions
+### Navigating Files and Directories
+
+https://swcarpentry.github.io/shell-novice/02-filedir/
+
+*Directory and folder are synonymous.*
+
+If you want to find the directory you're in, type `pwd`. This means **print working directory.** When you refer to a file without a pathname, bash finishes it off with this. `pwd` asks a question about the environment bash is going to run commands in. 
+
+File systems allow you to access a bunch of bytes. File systems are abstractions laid on piles of bits. **A hierarchical database. **
+
+This is a form of indexing to speed up access to things. 
+
+*Problems with hierarchical systems:*
+
+ - some things fit more than 1 category
+ - they are fragile! 
+ 
+**Commands:** `ls -F` prints a list with `/` in front of folders and `@` next to links. 
+
+Escape character: `\`. Turns off the special meaning of the following character. 
+
+**Commands:** 
+
+- `cd` changes directories. 
+- `ls -a` shows .s for certain files (**dot files:** .pdfs, .txts, etc...). These are hidden from the ls command. 
+- `..` means go up a folder
+- `open .` opens the working directory in finder
+- `cd-` goes back to the last folder you were in
+
+### Working with Files and Directories 
+
 
