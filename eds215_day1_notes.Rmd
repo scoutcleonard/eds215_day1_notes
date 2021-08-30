@@ -108,5 +108,6 @@ do
   
 done`
 
+**script**: a file full of shell commands 
 
 
